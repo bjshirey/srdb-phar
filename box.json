@@ -1,0 +1,6 @@
+{
+    "files": ["src/srdb.class.php", "src/srdb.cli.php"],
+    "main": "bin/main",
+    "output": "srdb.phar",
+    "stub": true
+}
