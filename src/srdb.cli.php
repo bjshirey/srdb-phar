@@ -11,7 +11,9 @@
 date_default_timezone_set( 'Europe/London' );
 
 // include the srdb class
-#require_once( realpath( dirname( __FILE__ ) ) . '/srdb.class.php' );
+// Disabled 11/24/2014, this method of inclusion didn't work within the phar
+# require_once( realpath( dirname( __FILE__ ) ) . '/srdb.class.php' );
+// Did a simple require_once, this works within the .phar
 require_once( 'srdb.class.php' );
 
 $opts = array(
