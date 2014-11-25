@@ -8,8 +8,11 @@ This is based on the Search and Replace Db library (https://github.com/interconn
 
 Setting Up
 -------------
-You'll need to update your php.ini settings so that phar.readonly=Off.
-Once that's complete, you can use Box2 (https://github.com/box-project/box2) to generate your .phar.
+* You'll need to update your php.ini settings so that phar.readonly=Off.
+* Once that's complete, you can use Box2 (https://github.com/box-project/box2) to generate your .phar.
+* Use the command 'php box.phar build' to package your files into a .phar
+* The stub is bin/main, in this case, all it does is require the srdb cli file
+* The functionality is implemented within the /src/ directory
 
 
 Dependencies
