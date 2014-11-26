@@ -22,5 +22,11 @@ Box2 (https://github.com/box-project/box2)
 
 Use
 ------------
-/usr/bin/php srdb.phar <args> - See https://github.com/interconnectit/Search-Replace-DB for CLI script usage
-/usr/bin/php /var/www/srdb.phar -h localhost -uroot -p1234 -n dpname -s www.atlanticbt.com -r abt.dev
+* /usr/bin/php srdb.phar <args> - See https://github.com/interconnectit/Search-Replace-DB for CLI script usage
+* /usr/bin/php /var/www/srdb.phar -h localhost -uroot -p1234 -n dpname -s www.atlanticbt.com -r abt.dev
+
+Use In Project
+------------
+* Import the srdb.phar into your project, the appropriate directory is not super critical, but will affect the path described above.
+* Within your project's db sync script, reference the "Use" section of this readme to include the necessary command to handle the search and replace functionality.
+* Currently included is a sample WordPress db sync script (sync-qa-db.wordpress.sample.sh) with an example of how srdb.sh may be used.
